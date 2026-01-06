@@ -4,7 +4,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplication1.MainWindow"
-        xmlns:controls="clr-namespace:AvaloniaApplication1.Controls.Buttons"
         Title="Калькулятор температур">
     <StackPanel>
         <Border Margin="5" CornerRadius="10" Background="BlueViolet">
@@ -20,8 +19,6 @@
             <TextBox Grid.Row="0" TextChanged="Calculate" Margin="0 5" Watermark="Целсии" Name="Celsius" />
             <TextBox Grid.Row="1" Margin="0 5" Watermark="Фаренгейты" IsReadOnly="True" Name="Fahrenheit" />
         </Grid>
-        <!-- <Button HorizontalAlignment="Center" Width="120" Background="BlueViolet" Height="60" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Click="Calculate">Рассчитать</Button> -->
-        <controls:DefaultButton Text="Рассчитать" />
         <Border Margin="5" CornerRadius="4" Background="Red" VerticalAlignment="Bottom" IsVisible="False" Name="ErrorMessage">
             <TextBlock Margin="5"
                        HorizontalAlignment="Left"
